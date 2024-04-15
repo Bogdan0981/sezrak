@@ -1,0 +1,86 @@
+.cooperation-item
+    display: flex
+    justify-content: space-between
+    align-items: center
+    color: $color-black
+    font-family: "Unbounded"
+    padding-bottom: 2rem
+    border-bottom: 3px solid $color-benefits-bcg
+    &:nth-child(5) &-title
+        br
+            &:nth-child(1)
+                display: none
+    @include tablet
+        justify-content: start
+        &:nth-child(5) &-title
+            br
+                &:nth-child(2)
+                    display: none
+    @include mobile
+        flex-direction: column
+        align-items: start
+        justify-content: start
+        min-width: 33rem
+        margin-bottom: 0
+        display: none
+        &:nth-child(1)
+            display: flex
+        &:not(:last-child)
+            margin-right: 1.5rem
+    &:hover
+        text-decoration: none
+        color: $color-black
+    &:hover &-icon
+        color: $color-green-light
+        transform: rotate(-45deg)
+    &:active &-icon
+        color: $color-black
+        transform: rotate(0)
+    &-text
+        display: flex
+        align-items: center
+        @include tablet
+            display: block
+            margin-right: 2.5rem
+        @include mobile
+            display: flex
+            margin-bottom: 2rem
+    &-number
+        color: $color-green-light
+        font-size: 13rem
+        margin-right: 2rem
+        @include tablet
+            font-size: 5.6rem
+        @include mobile
+            font-size: 4.2rem
+    &-title
+        font-size: 2.6rem
+        font-weight: 700
+        text-transform: uppercase
+        @include tablet
+            font-size: 2rem
+        @include mobile
+            font-size: 1.5rem
+    &-descr
+        font-family: "Montserrat"
+        font-size: 1.5rem
+        font-weight: 500
+        line-height: 130%
+        @include tablet
+            &:not(:last-child)
+                margin-right: 2.5rem
+        @include mobile
+            margin-right: 0
+            &:not(:last-child)
+                margin-bottom: 2rem
+    &-icon
+        font-size: 2rem
+        transition: all .3s
+        @include tablet
+            margin-right: 2.5rem
+            font-size: 3rem
+        @include mobile
+            margin-right: 0
+            transform: rotate(90deg)
+            margin-bottom: 2rem
+            margin-bottom: 2rem

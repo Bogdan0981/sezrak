@@ -1,0 +1,59 @@
+.button
+    &-header
+        background: none
+        border-radius: 3.3rem
+        border: 3px solid $color-green-light
+        padding: 2.4rem 4rem
+        color: $color-green-light
+        font-size: 1.6rem
+        font-weight: 700
+        font-family: "Montserrat"
+        transition: all .3s
+        text-transform: uppercase
+        &:focus
+            outline: none
+        &:hover
+            color: $color-black
+            border: 3px solid $color-button-hover-bcg
+            background: $color-button-hover-bcg
+            cursor: pointer
+        &:active
+            background: $color-clicked-button-bcg
+            border: 3px solid $color-clicked-button-bcg
+        @include mobile
+            display: none
+    &-main
+        border-radius: 3.3rem
+        color: $color-black
+        background: $color-green-light
+        border: none
+        padding: 2.4rem 4rem
+        font-size: 1.6rem
+        font-family: "Montserrat"
+        font-weight: 700
+        transition: all .3s
+        text-transform: uppercase
+        &:focus
+            outline: none
+        &:hover
+            color: $color-black
+            background: $color-button-hover-bcg
+            cursor: pointer
+        &:active
+            background: $color-clicked-button-bcg
+        @include mobile
+            font-size: 1.4rem
+            padding: 1.8rem 2.6rem
+            margin-bottom: 4.1rem
+    &-slider
+        background: none
+        border: 3px solid $color-green-light
+        display: flex
+        align-items: center
+        justify-content: center
+        padding: .9rem .9rem
+        border-radius: 1000rem
+        color: $color-green-light
+        font-size: 2rem
+        &:focus
+            outline: none

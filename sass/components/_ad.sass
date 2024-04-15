@@ -1,0 +1,25 @@
+.ad
+    display: flex
+    justify-content: space-between
+    align-items: center
+    background: $color-black
+    color: $color-white
+    padding: 2.65rem 0 
+    overflow-x: auto
+    @include tablet
+        padding: 1.4rem 0
+    @include mobile
+        padding: 1.45rem
+    &::-webkit-scrollbar
+        display: none
+    &-text
+        font-family: "Montserrat"
+        font-weight: 600
+        font-size: 2.4rem
+        white-space: nowrap    
+        &:not(:last-child)
+            margin-right: 8rem
+        @include tablet
+            font-size: 1.7rem
+        @include mobile
+            font-size: 1.5rem

@@ -1,0 +1,21 @@
+.mobile-me-items
+    display: none
+    justify-content: space-between
+    padding: 0 2.4rem
+    flex-wrap: wrap
+    @include tablet
+        display: flex
+
+.mobile-me-item
+    font-family: "Unbounded"
+    font-weight: 600
+    text-transform: uppercase
+    &-title
+        color: $color-green-light
+        font-size: 4.1rem
+        line-height: 142%
+    &-descr
+        font-size: 1.4rem
+        line-height: 150%
+        @include mobile
+            font-size: 1.2rem

@@ -1,0 +1,175 @@
+.hero
+    padding: 0 .8rem 0 11.9rem
+    display: flex
+    justify-content: space-between
+    overflow: hidden
+    @include tablet
+        padding: 0
+        padding-left: 2.4rem
+    @include mobile
+        flex-direction: column
+        align-items: center
+        padding: 0 1.5rem
+    &-img
+        position: relative
+        &-circle
+            border-radius: 100rem
+            background: $color-green-light
+            filter: blur(86px)
+            width: 58rem
+            height: 58rem
+            position: absolute
+            top: 15rem
+            z-index: -1
+            @include tablet
+                width: 32.6rem
+                height: 32.6rem
+                filter: blur(48px)
+            @include mobile
+                width: 30.7rem
+                height: 30.7rem
+                filter: blur(45px)
+                top: 1rem
+        img
+            filter: drop-shadow(2px 4px 6px $color-green-light)
+            @include tablet
+                width: 39.6rem
+                height: 50rem
+            @include mobile
+                width: 28.1rem
+                height: 35.6rem
+
+
+.benefits
+    padding: 12rem 3.9rem
+    background: $color-benefits-bcg
+    @include tablet
+        padding: 12rem 1.4rem
+    @include mobile
+        padding: 6rem 0 6rem 2rem
+    &-items
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        @include tablet
+            justify-content: start
+        @include mobile
+            flex-wrap: nowrap
+            overflow-x: auto
+            &::-webkit-scrollbar
+                display: none
+
+.me
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 6.4rem 5rem 0 5rem
+    @include tablet
+        padding: 9rem 2.1rem 3rem 0rem
+        justify-content: start
+    @include mobile
+        flex-direction: column
+        padding: 6rem 1.5rem 3rem 1.5rem
+        align-items: start
+    &-img
+        position: relative
+        @include tablet
+            margin-right: 2.2rem
+        @include mobile
+            order: 2
+        &-circle
+            width: 50rem 
+            height: 50rem
+            background: $color-green-light
+            filter: blur(132px)
+            position: absolute
+            top: 16rem
+            z-index: -1
+            @include tablet
+                width: 33.4rem
+                height: 33.4rem
+                top: 5rem
+            @include mobile
+                width: 27.3rem
+                height: 27.3rem
+                filter: blur(54px)
+        img
+            @include tablet
+                width: 33.7rem
+                height: 46rem
+            @include mobile
+                width: 24.7rem
+                height: 35.2rem
+    &-items
+        display: flex
+        flex-wrap: wrap
+        @include tablet
+            display: none
+    &-text
+        width: 48%
+        order: 1
+        display: block
+
+.our-help
+    padding: 12rem 4.5rem
+    background: $color-benefits-bcg
+    @include tablet
+        padding: 9rem 0.4rem 12rem 1.4rem
+    @include mobile
+        padding: 3rem 0 6rem 1.5rem
+    &-items
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        @include mobile
+            flex-wrap: nowrap
+            overflow-x: auto
+            &::-webkit-scrollbar
+                display: none
+
+.cooperation
+    padding: 12rem 
+    @include tablet
+        padding: 12rem 2.4rem
+    @include mobile
+        padding: 6rem 0 6rem 1.5rem
+    &-items
+        margin-bottom: 5rem
+        @include mobile
+            display: flex
+            overflow-x: auto
+            margin-bottom: 2rem
+            &::-webkit-scrollbar
+               display: none 
+    &-button
+        text-align: center
+    &-slider
+        display: flex
+        justify-content: center
+        align-items: center
+        display: none
+        margin-bottom: 2rem
+        @include mobile
+            display: flex
+        &-numbers
+            font-size: 2rem
+            font-family: "Montserrat"
+            line-height: 130%
+            font-weight: 500
+            margin-right: 1.5rem
+
+
+.cases
+    padding: 0rem 5rem 0 5rem
+    @include tablet
+        padding: 0 1.5rem 0 1.5rem
+    &-text
+        margin-bottom: 3rem
+    &-cards
+        display: flex
+        flex-wrap: wrap
+        @include mobile
+            flex-wrap: nowrap
+            overflow-x: auto
+            &::-webkit-scrollbar
+                display: none
