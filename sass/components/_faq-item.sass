@@ -1,0 +1,65 @@
+.faq-item
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding-bottom: 3rem
+    border-bottom: 1px solid $color-white
+    &:not(:last-child)
+        margin-bottom: 3rem
+    &-title
+        font-family: "Unbounded"
+        font-weight: 600
+        font-size: 2rem
+        line-height: 33.3px
+        margin-bottom: 2rem
+        @include tablet
+            font-size: 1.6rem
+        @include mobile
+            font-size: 1.4rem
+    &-descr
+        font-family: "Montserrat"
+        font-weight: 500
+        font-size: 1.5rem
+        line-height: 130%
+        width: 78rem
+        display: none
+        width: 100%
+        &__active
+            display: block
+    &-button
+        button
+            background: none
+            border-radius: 1000rem
+            border: 3px solid $color-clicked-button-bcg
+            color: $color-clicked-button-bcg
+            width: 6rem
+            height: 6rem
+            @include mobile
+                width: 4rem
+                height: 4rem
+            &:focus
+                outline: none
+            &:hover i
+                transform: rotate(45deg)
+            &:active i
+                transform: rotate(90deg)  
+            i
+                transform: rotate(90deg)
+                font-size: 3rem
+                transition: all .3s
+                @include mobile
+                    font-size: 2rem
+        &__active
+            button
+                i
+                    transform: rotate(-90deg)
+            
+
+.comments
+    padding: 12rem 11.9rem
+    &-top > .title-secondary
+        width: 1007px
+    &-top
+        display: flex
+        justify-content: space-between
+        align-items: center

@@ -1,0 +1,42 @@
+.comments-top-slider
+    display: flex
+    justify-content: space-between
+    align-items: center
+    @include mobile
+        justify-content: center
+        order: 3
+        flex: 1
+    &-text
+        font-family: "Montserrat"
+        font-weight: 500
+        font-size: 3rem
+        line-height: 130%
+        margin-right: 2.4rem
+        @include mobile
+            font-size: 2rem
+    &-button
+        border: 3px solid $color-clicked-button-bcg
+        border-radius: 100rem
+        font-size: 3.5rem
+        padding: .4rem 1.3rem
+        color: $color-clicked-button-bcg
+        transition: all .3s
+        @include mobile
+            width: 4rem
+            height: 4rem
+            font-size: 2rem
+            padding: none
+            display: flex
+            justify-content: center
+            align-items: center
+        &:hover
+            background: $color-clicked-button-bcg
+            color: $color-white
+        &:active
+            color: $color-clicked-button-bcg
+            background: none
+        &:nth-child(1)
+            margin-right: 2.4rem
+            display: none
+            i
+                transform: rotate(-180deg)

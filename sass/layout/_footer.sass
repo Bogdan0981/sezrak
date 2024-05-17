@@ -1,0 +1,101 @@
+.footer
+    background: $color-black
+    padding: 12rem
+    display: flex
+    justify-content: space-between
+    @include tablet
+        padding: 12rem 2.4rem
+    @include mobile
+        flex-direction: column
+    &-right
+        display: flex
+        justify-content: space-between
+        @include tablet
+            flex-direction: column
+    &-logo
+        display: flex
+        flex-direction: column
+        img
+            margin-bottom: 6rem
+            @include tablet
+                margin-bottom: 17.6rem 
+            @include mobile
+                margin-bottom: 4.5rem
+        &-text
+            &-item
+                color: $color-white
+                font-family: "Montserrat"
+                font-size: 1.3rem
+                @include mobile
+                    order: 4
+                &:nth-child(2)
+                    &:hover
+                        color: $color-green-light
+                        text-decoration: none
+                    &:active
+                        color: $color-white
+                &:not(:last-child)
+                    margin-bottom: 1.6rem
+    &-links
+        display: flex
+        justify-content: space-between
+        margin-right: 24rem
+        @include tablet
+            margin-right: 0
+        @include mobile
+            margin-bottom: 6rem
+        &-item
+            display: flex
+            flex-direction: column
+            &:not(:last-child)
+                margin-right: 15rem
+                @include tablet
+                    margin-right: 9.4rem
+                @include mobile
+                    margin-right: 5.2rem
+            &:nth-child(2) > &-link
+                &:not(:last-child)
+                    margin-bottom: 2rem
+            &-link::first-letter
+                text-transform: uppercase
+            &-link
+                color: $color-white
+                font-family: "Montserrat"
+                font-size: 1.6rem
+                font-weight: 500
+                transition: all .3s
+                &:hover
+                    opacity: .7
+                    color: $color-white
+                    text-decoration: none
+                &:active
+                    opacity: 1
+                    color: $color-green-light
+                &:not(:last-child)
+                    margin-bottom: 3rem
+    &-icons
+        display: flex
+        &-item
+            background: $color-green-light
+            width: 5rem
+            height: 5rem
+            display: flex
+            justify-content: center
+            align-items: center
+            border-radius: .8rem
+            color: $color-black
+            font-size: 2rem
+            transition: all .3s
+            @include mobile
+                width: 4rem
+                height: 4rem
+            &:hover
+                color: $color-black
+                text-decoration: none
+                background: $color-button-hover-bcg
+            &:active
+                background: $color-clicked-button-bcg
+            &:not(:last-child)
+                margin-right: 2.4rem
+                @include mobile
+                    margin-right: 1.5rem

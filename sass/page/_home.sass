@@ -173,3 +173,133 @@
             overflow-x: auto
             &::-webkit-scrollbar
                 display: none
+
+.quiz
+    display: flex
+    justify-content: space-between
+    background: $color-black
+    padding: 12rem 5.9rem 0 12rem
+    position: relative
+    overflow: hidden
+    padding-bottom: 12rem
+    @include tablet
+        padding: 12rem 2.4rem 
+        padding-right: 0rem
+    @include mobile
+        display: block
+        padding: 6rem 1.5rem 0 1.5rem
+        padding-bottom: 39rem
+    &-title
+        @include tablet
+        position: relative
+        width: 50rem
+        z-index: 3
+        br
+            display: none
+        @include mobile
+            width: 100%
+    &-descr
+        @include tablet
+        width: 35rem
+        position: relative
+        z-index: 4
+        br
+            display: none
+    &-img
+        position: absolute
+        right: 0
+        top: 20rem
+        img
+            position: absolute
+            z-index: 2
+            right: 12.5rem
+            top: 17rem
+            @include tablet
+                width: 33.5rem
+                height: 58.5rem
+                bottom: 0rem
+                right: .8rem
+            @include mobile
+                position: relative
+                width: 21.8rem
+                height: 40rem
+                right: 7rem
+                top: 45.8rem
+        &-round
+            position: absolute
+            top: 19rem
+            right: 8rem
+            width: 60rem
+            height: 60rem
+            background: $color-green-light
+            filter: blur(120px)
+            z-index: 1
+            @include tablet
+                width: 46.5rem
+                height: 46.5rem
+                filter: blur(93px)
+                right: -8rem
+            @include  mobile
+                width: 31.5rem
+                height: 31.5rem
+                filter: blur(69px)
+                right: 3rem
+                top: 50rem
+
+
+.faq
+    padding: 12rem 11.8rem 
+    @include tablet
+        padding: 11.8rem 2.4rem
+    @include mobile
+        padding: 6rem 1.4rem
+    &-title > .title-secondary
+        @include mobile
+            width: 31rem
+    &-container
+        background: $color-benefits-bcg
+        border-radius: 3.2rem
+        padding: 12rem 21.6rem
+        @include tablet
+            padding: 12rem 2rem
+        @include mobile
+            padding: 6rem 1rem
+
+
+.comments
+    display: flex
+    flex-direction: column
+    flex-wrap: wrap
+    @include tablet
+        padding: 12rem 2.4rem
+    @include mobile
+        padding: 6rem 1.5rem
+        overflow: hidden
+    &-top
+        @include tablet
+            width: 100%
+        @include mobile
+            display: flex
+            flex-direction: column
+    &-top > .title-secondary
+        @include tablet
+            width: 47.8rem
+        @include mobile
+            width: 33rem
+            order: 1
+    &-bottom
+        display: flex
+        justify-content: space-between
+        align-items: center
+        @include tablet
+            justify-content: left
+
+
+.form-container
+    background: $color-black
+    margin-bottom: -1rem
+    padding: 12rem 12rem 0 12rem
+    @include tablet
+        padding: 2.4rem 2.4rem 0 2.4rem
+    @include mobile
+        padding: 1.5rem 1.5rem 0 1.5rem

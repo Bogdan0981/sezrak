@@ -1,0 +1,60 @@
+.form
+    background: $color-benefits-bcg
+    display: flex
+    justify-content: space-between
+    border-radius: 3.2rem
+    padding: 12rem 0 12rem 12rem
+    position: relative
+    overflow: hidden
+    @include tablet
+        padding: 12rem 1.5rem
+    @include mobile
+        padding: 6rem 1.5rem
+        flex-direction: column
+        height: 76rem
+    &-img
+        position: absolute
+        right: 0
+        bottom: 0
+        img
+            z-index: 2
+            position: absolute
+            bottom: 0
+            right: 0
+            @include tablet
+                width: 36.9rem
+                height: 43.4rem
+            @include mobile
+                width: 24.8rem
+                height: 29.6rem
+                right: 4rem
+                bottom: -6rem
+        &-round
+            width: 50rem
+            height: 50rem
+            background: $color-green-light
+            border-radius: 100rem
+            filter: blur(66px)
+            position: absolute
+            bottom: 0
+            right: -9.3rem
+            z-index: 1
+            @include tablet
+                width: 41rem
+                height: 41rem
+                filter: blur(54px)
+            @include mobile
+                width: 27.4rem
+                height: 27.4rem
+                filter: blur(36px)
+                right: 1rem
+                bottom: -7rem
+    &-text
+        width: 80rem
+    &-text > .descr-main
+        margin-bottom: 5rem
+        @include tablet
+            width: 34.3rem
+        @include mobile
+            width: 30rem
+            margin-bottom: 3rem
